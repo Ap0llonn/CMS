@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 public class CmsApp extends Application {
 
     @Override
-    public void start(Stage stage){
+    public void start(Stage stage) {
 
         try {
             Parent root = FXMLLoader.load(getClass().getResource("menu.fxml"));
@@ -19,15 +19,15 @@ public class CmsApp extends Application {
             stage.show();
             stage.setTitle("CMS");
             stage.setResizable(false);
-            stage.getIcons().add(new Image(getClass().getResource("/com/cms/assets/icon/cms-icon.png").toExternalForm()));
+            stage.getIcons()
+                    .add(new Image(getClass().getResource("/com/cms/assets/icon/cms-icon.png").toExternalForm()));
         } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
 
-    public static void start(){
+    public static void start() {
         launch();
     }
-
 }

@@ -42,3 +42,5 @@ This project aims to streamline academic operations at a cégep with a comprehen
 
 **Note**
 - This project was developed for self-development and is intended for educational purposes.
+- To Install the netconex.jar library, navigate to the folder of the project where you want to use it, then using ***git bash*** enter the following command : 
+``` mvn install:install-file -Dfile=lib/netconex.jar -DgroupId=qc.netconex -DartifactId=netconex -Dversion=1.0.0 -Dpackaging=jar```
